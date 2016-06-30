@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        webView = WKWebView(frame: self.view.frame)
-        
+        webView = WKWebView(frame: self.view.frame, configuration: WKWebViewConfiguration())
+        webView.navigationDelegate = self;
         self.view.addSubview(webView)
         let baseURL = NSBundle.mainBundle().bundleURL
         print("URL : " + baseURL.absoluteString)
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         } else {
             // Fallback on earlier versions
             let urlStr = NSString.init(format: "%@/%@", baseURL, "sportchannel_web") as String
-            initWebServer(NSURL(fileURLWithPath: urlStr))
+            initWebServer(NSURL(string: urlStr)!)
         }
         
         let basePath = NSURL(string: "http://localhost:9090/index.html")
@@ -81,6 +81,13 @@ class ViewController: UIViewController {
         })
         webServer.startWithPort(9090, bonjourName: "")
         print("Server start with URL : " + webServer.serverURL.absoluteString)
+    }
+    
+}
+
+extension ViewController: WKNavigationDelegate {
+    func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
+        decisionHandler(WKNavigationActionPolicy.Allow)
     }
 }
 

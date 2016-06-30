@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2D520C4D930A64B5131B09E7BDD3D5D200F007F3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B2D9C56FC38DC6E6567DE7C07192888B63198BE0" : 0,
+    "2D520C4D930A64B5131B09E7BDD3D5D200F007F3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7733F8E4-A7A9-4D95-99A3-26C0DD47BE70",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B2D9C56FC38DC6E6567DE7C07192888B63198BE0" : "..\/sportchannel_web",
+    "2D520C4D930A64B5131B09E7BDD3D5D200F007F3" : "SportChannel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SportChannel",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SportChannel.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oPhuongXuongQuang\/sportchannel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2D520C4D930A64B5131B09E7BDD3D5D200F007F3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oPhuongXuongQuang\/sportchannel_web.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B2D9C56FC38DC6E6567DE7C07192888B63198BE0"
+    }
+  ]
+}
